@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         just want to figure out what will happen if i push sth to master branch
         </p>
         <a
           className="App-link"
