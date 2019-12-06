@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavBar = (props) => {
   return (
     !props.isMobile?
-      <Nav className="nav" activeKey="/home">
+      <Nav className="nav-normal" activeKey="/home">
         <Nav.Item>
           <Nav.Link
             as={Link}

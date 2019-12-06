@@ -1,16 +1,14 @@
 @import 'Colors';
-.nav{
+.nav-normal{
     position: absolute;
     right:8%;
     top: 5%;
-    
 }
-
 .nav-link-normal{
+
+    cursor:  pointer !important;
     color: black ;
 }
-
-
 .nav-mobile{
     position: absolute;
     right:8%;
