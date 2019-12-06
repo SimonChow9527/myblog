@@ -32,6 +32,7 @@ dotenv.config();
 
   componentDidMount() {
     window.addEventListener('resize', this.CheckMobile);
+    this.CheckMobile();
   }
   componentWillUnmount() {
     window.removeEventListener('resize', this.CheckMobile);
