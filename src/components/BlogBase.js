@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import '../styles/BlogBaseStyle.scss'
 
 
 class BlogBase extends Component {
@@ -7,7 +8,10 @@ class BlogBase extends Component {
 
     render() {
         return (
-            <p>this is blogbase</p>
+            <div className='first'>
+                <p>this is blogbase</p> 
+            </div>
+           
         )
     }
 }

@@ -5,15 +5,46 @@ import Blogs from './components/Blogs';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import PageNotFound from './components/PageNotFound';
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 
-const App = () => {
+ class App extends Component {
+  
+  constructor(props){
+    super(props);
+    this.CheckMobile=this.CheckMobile.bind(this);
+  
+    this.state={
+      isMobile:'',
+    }
 
-  return (
-      <div>
+  }
+
+  CheckMobile() {
+    let isMobile=(window.screen.width <parseInt(process.env.REACT_APP_MOBILE_WIDTH));
+    this.setState({
+      isMobile:isMobile
+    },()=>{})
+}
+
+  componentDidMount() {
+    window.addEventListener('resize', this.CheckMobile);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.CheckMobile);
+  }
+
+
+
+
+  render() {
+    return (
+      <div className='App'>
                 <Router>
-                   <Navbar/>    
+                   <Navbar isMobile={this.state.isMobile}/>    
                    <Switch>
                         <Route exact path="/" component={BlogBase} /> 
                         <Route path="/home" component={BlogBase} />
@@ -24,8 +55,8 @@ const App = () => {
                      </Switch>
                 </Router>              
             </div>
-  
-  );
-};
+    )
+  }
+}
 
 export default App;
