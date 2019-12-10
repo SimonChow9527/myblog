@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import BlogBase from './components/BlogBase';
-import Navbar from './components/NavBar';
+import HomePage from './components/HomePage';
+import MyNavbar from './components/MyNavBar';
 import Blogs from './components/Blogs';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -45,15 +45,19 @@ dotenv.config();
     return (
       <div className='App'>
                 <Router>
-                   <Navbar isMobile={this.state.isMobile}/>    
+                  <div className='nav-bar'>
+                   <MyNavbar isMobile={this.state.isMobile}/>  
+                   </div>
+                   <div className='content'> 
                    <Switch>
-                        <Route exact path="/" component={BlogBase} /> 
-                        <Route path="/home" component={BlogBase} />
+                        <Route exact path="/" component={HomePage} /> 
+                        <Route path="/home" component={HomePage} />
                         <Route path="/blogs" component={Blogs} />
                         <Route path="/projects" component={Projects} />
                         <Route path="/contact" component={Contact} />
                         <Route component={PageNotFound} />
                      </Switch>
+                     </div> 
                 </Router>              
             </div>
     )
