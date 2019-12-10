@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/HomePageStyle.scss";
-import intrologo from "../../resources/pic/background.jpg";
+
 
 class Intro extends Component {
   constructor(props) {
@@ -103,7 +103,6 @@ class Intro extends Component {
     return (
       <div className="homepage-intro">
         <div className="homepage-intro-bg">
-          <img src={intrologo} alt="me" />
         </div>
         <div
           className="homepage-intro-content"
