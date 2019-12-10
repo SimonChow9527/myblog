@@ -75,7 +75,6 @@ class Intro extends Component {
       fulltext += this.completeText[i];
     }
     destination.innerHTML = fulltext + substring;
-    console.log(fulltext + " plus " + this.state.iIndex + substring);
     if (this.state.iTextPos++ == this.state.iArrLength) {
       this.setState(
         prevState => {
