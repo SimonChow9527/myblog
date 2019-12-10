@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HomePage from './components/HomePage';
-import Navbar from './components/NavBar';
+import MyNavbar from './components/MyNavBar';
 import Blogs from './components/Blogs';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -46,7 +46,7 @@ dotenv.config();
       <div className='App'>
                 <Router>
                   <div className='nav-bar'>
-                   <Navbar isMobile={this.state.isMobile}/>  
+                   <MyNavbar isMobile={this.state.isMobile}/>  
                    </div>
                    <div className='content'> 
                    <Switch>
