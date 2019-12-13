@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/HomePageStyle.scss";
 import Intro from "./homePagePieces/Intro";
+import AboutMe from "./homePagePieces/AboutMe";
 import {
   Link,
   DirectLink,
@@ -78,7 +79,6 @@ class HomePage extends Component {
         };
       },
       () => {
-        console.log("up" + this.state.scrollIndex);
         document.getElementById("uplink").click();
       }
     );
@@ -92,7 +92,6 @@ class HomePage extends Component {
       },
       () => {
         this.forceUpdate();
-        console.log("down" + this.state.scrollIndex);
         document.getElementById("downlink").click();
       }
     );
@@ -106,7 +105,7 @@ class HomePage extends Component {
           <Intro />
         </div>
         <div id="second" className="second element">
-          <p>this is blogbase-second</p>
+          <AboutMe />
         </div>
         <div id="third" className="third element">
           <p>this is blogbase-3</p>

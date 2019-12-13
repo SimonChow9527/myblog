@@ -2,6 +2,8 @@
 html, body{
     min-height:100%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+   
 }
 body{height:100vh;}
 #root{
@@ -12,7 +14,8 @@ body{height:100vh;}
     width: 100% ;
     height: 100% ;
     margin: 0px;
-    position: relative;
+    position: relative; 
+    color:$my-black;
 }
 
 
@@ -68,7 +71,7 @@ body{height:100vh;}
 }
 
 .homepage-intro-content p{
-   font-size:60px;
+   font-size:64px;
    display:inline;
 }
 
@@ -107,3 +110,36 @@ body{height:100vh;}
    }
 }
 
+.homepage-aboutme{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.homepage-aboutme-title{
+    top:5%;
+    font-size: 64px;
+    height: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.homepage-aboutme-title hr{
+    margin: 0px;
+}
+.homepage-aboutme-content{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.homepage-aboutme-content-skill{
+    width: 33%;
+    height: 50%;
+}
+
+.bootstrap-col{
+    align-items: center;;
+}

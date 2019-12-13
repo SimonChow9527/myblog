@@ -7,9 +7,12 @@ import Contact from './components/Contact';
 import PageNotFound from './components/PageNotFound';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import * as dotenv from 'dotenv';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
 
 dotenv.config();
-
+library.add(fab);
 
  class App extends Component {
   
