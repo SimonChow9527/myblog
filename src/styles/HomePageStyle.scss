@@ -15,7 +15,7 @@ body{height:100vh;}
     height: 100% ;
     margin: 0px;
     position: relative; 
-    color:$my-black;
+  
 }
 
 
@@ -37,10 +37,12 @@ body{height:100vh;}
     background-color:$my-white;
 }
 
-.second{
+.second{ 
     height: 100%;
     width: 100%;
+    overflow: auto;
     background-color:$my-lightgrey;
+    color:$my-black;
 }
 
 .third{
@@ -71,7 +73,7 @@ body{height:100vh;}
 }
 
 .homepage-intro-content p{
-   font-size:64px;
+   font-size:10vh;
    display:inline;
 }
 
@@ -111,14 +113,14 @@ body{height:100vh;}
 }
 
 .homepage-aboutme{
-    height: 100%;
-    width: 100%;
+    top:40px;
     position: relative;
+    width: 100%;
+    height: fit-content;
 }
 
 .homepage-aboutme-title{
-    top:5%;
-    font-size: 64px;
+    font-size: 10vh;
     height: 20%;
     text-align: center;
     position: relative;
@@ -127,19 +129,31 @@ body{height:100vh;}
 .homepage-aboutme-title hr{
     margin: 0px;
 }
+
 .homepage-aboutme-content{
     position: relative;
-    height: 80%;
     width: 100%;
     text-align: center;
     align-content: center;
 }
-
 .homepage-aboutme-content-skill{
-    width: 33%;
-    height: 50%;
+    align-content: center;
+    justify-content: center;
+}
+.homepage-aboutme-content-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+}
+.homepage-aboutme-content-li{
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    border: 10px;
+    margin: 20px 20px 20px 20px;
+    list-style-type:none;
 }
 
-.bootstrap-col{
-    align-items: center;;
-}
