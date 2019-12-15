@@ -7,7 +7,7 @@ const AboutMe = () => {
   const skill1 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "react"]} size="5x" />}
-      desc="this is for reactthis is for reactthis is for reactthis is for reactthis is for reactthis is for react"
+      desc="Multiple project experience using React framework,"
     />
   );
   const skill2 = (
@@ -19,25 +19,28 @@ const AboutMe = () => {
   const skill3 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "dev"]} size="5x" />}
-      desc="this section is for backend java .netthis section is for backend java .netthis section is for backend java .netthis section is for backend java .net"
+      desc="this section is for backend java .net yo yo yo yo"
     />
   );
   const skill4 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "aws"]} size="5x" />}
-      desc="this section is for  cloudcloudc loudcloudcl oudcloudclou dcloudclou dcloudcloudcloud"
+      desc="Ochestrate cloud products to achieve development requirements. la la la "
     />
   );
   const skill5 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={faFont} size="5x" />}
-      desc="this section is for Agile Agile Agile Agile Agile Agile Agile Agile Agile Agile Agile Agile Agile Agile"
+      desc="I have hands on experience with Agile so I can get familiar with development process quickly. 
+      Backlog, planning, stand up, retro, you name it, I got it. "
     />
   );
   const skill6 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={faUserGraduate} size="5x" />}
-      desc="this section is for my high gpa high gpa high gpa high gpa high gpa high gpa high gpa high gpa high gpa high gpa high gpa"
+      desc="I finished my master's degree in IT with GPA 3.7/4, which proves me to be a good learner. I recognize myself as a 
+      developer with the passion and willingness to pick up new skills and dig deeper into my current skills, so I
+       believe I can be a valuable asset to your team."
     />
   );
   return (
