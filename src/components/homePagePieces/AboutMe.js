@@ -32,7 +32,7 @@ const AboutMe = () => {
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={faFont} size="5x" />}
       desc="I have hands on experience with Agile so I can get familiar with development process quickly. 
-      Backlog, planning, stand up, retro, you name it, I got it. "
+      Backlog, planning meeting, stand up, retro, you name it, I got it. "
     />
   );
   const skill6 = (
