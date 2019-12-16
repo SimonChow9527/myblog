@@ -1,4 +1,6 @@
 import React from "react";
+import ProjectItem from "./ProjectItem";
+import webjet from "../../resources/pic/webjet.jpg";
 
 const Projects = () => {
   return (
@@ -7,12 +9,23 @@ const Projects = () => {
         <div className="homepage-project-title-desc">Projects</div>
         <hr />
         <div className="homepage-project-title-subdesc">
-          My past project experience
+          Projects throughout my journey
         </div>
       </div>
       <div className="homepage-project-content">
-        <div className="homepage-project-content-photo"></div>
-        <div className="homepage-project-content-desc"></div>
+        <ProjectItem
+          photo={webjet}
+          title="Anywhere search"
+          role="Frontend dev"
+          desc="desc asddas dasd  asd a dasd as d"
+        />
+        <ProjectItem
+          photo={webjet}
+          title="Anywhere search"
+          role="Frontend dev"
+          desc="desc asddas dasd  asd a dasd as d"
+        />
+        <a>Wants to know more? wo bu gao su ni</a>
       </div>
     </div>
   );

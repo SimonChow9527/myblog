@@ -19,7 +19,7 @@ const AboutMe = () => {
   const skill3 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "dev"]} size="5x" />}
-      desc="this section is for backend java .net yo yo yo yo"
+      desc="RESTful API and microservices this section is for backend java .net yo yo yo yo"
     />
   );
   const skill4 = (
