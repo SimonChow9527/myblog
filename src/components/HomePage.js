@@ -17,6 +17,8 @@ import {
   faArrowAltCircleDown
 } from "@fortawesome/free-solid-svg-icons";
 
+import Projects from './homePagePieces/Projects';
+
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -108,7 +110,7 @@ class HomePage extends Component {
           <AboutMe />
         </div>
         <div id="third" className="third element">
-          <p>this is blogbase-3</p>
+          <Projects/>
         </div>
         <div id="fourth" className="fourth element">
           <p>this is blogbase-4</p>

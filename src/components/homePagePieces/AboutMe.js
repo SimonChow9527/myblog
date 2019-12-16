@@ -19,7 +19,7 @@ const AboutMe = () => {
   const skill3 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "dev"]} size="5x" />}
-      desc="this section is for backend java .net yo yo yo yo"
+      desc="RESTful API and microservices this section is for backend java .net yo yo yo yo"
     />
   );
   const skill4 = (
@@ -32,7 +32,7 @@ const AboutMe = () => {
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={faFont} size="5x" />}
       desc="I have hands on experience with Agile so I can get familiar with development process quickly. 
-      Backlog, planning, stand up, retro, you name it, I got it. "
+      Backlog, planning meeting, stand up, retro, you name it, I got it. "
     />
   );
   const skill6 = (
