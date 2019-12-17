@@ -10,7 +10,7 @@ const Projects = () => {
         <div className="homepage-project-title-desc">Projects</div>
         <hr />
         <div className="homepage-project-title-subdesc">
-          Projects throughout my journey | find more on Projects page
+          Projects throughout my journey & <br /> find more on Projects page
         </div>
       </div>
       <ol className="homepage-project-content-ol">

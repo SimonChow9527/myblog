@@ -197,10 +197,11 @@ img{
     height: 30vmax;
     width: 70vmax;
     justify-content: center;
-    align-items: center;
+    align-items:center
 }
 
 .project-content-photo{
+    top:20%;
     height: 50%;
     width: 25%;
     position: relative;
@@ -214,29 +215,71 @@ img{
 }
 
 .project-content-desc{
-
+    top:20%;
     margin-left:31%;
     width: 59%;
     height:99%;
     text-align: start;
+    position: relative;
 }
 
 .project-content-desc h6{
     text-decoration: underline;
 }
 
+.homepage-contact{
+    top:5vh;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-contact-title{  
+    height: 20%;
+    text-align: center;
+    position: relative;
+}
+.homepage-contact-title-desc{
+    font-size: 10vh;
+}
+
+.homepage-contact-title hr{
+    margin: 0px;
+}
+
+.homepage-contact-content{
+    display: flex;
+    justify-content: space-between;
+    top:30%;
+    left: 20%;
+    height:60%;
+    width: 60%;
+    position: relative;
+}
+
+
 
 ////////don't forget to implement mobile mode/////////////////////////
 @media (max-width:960px){
 
     .second{
-        overflow: scroll;
+        height: auto;
+        overflow: wrap;
     }
     .third{
-        overflow: scroll;
+        height: auto;
+        overflow: wrap;
     }
     .scroll-control{
         display: none;
+    }
+    .homepage-aboutme{
+        top:0;
+    }
+    .homepage-project{
+        top: 0;
     }
     .homepage-project-content-ol{
         position: relative;
@@ -275,6 +318,17 @@ img{
 }
 .project-content-desc h4,h6{
    text-align: center;
+}
+
+.homepage-contact-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top:20%;
+    left:40%;
+    height:60%;
+    width: 60%;
+    position: relative;
 }
 
 }
