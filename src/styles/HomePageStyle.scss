@@ -197,10 +197,11 @@ img{
     height: 30vmax;
     width: 70vmax;
     justify-content: center;
-    align-items: center;
+    align-items:center
 }
 
 .project-content-photo{
+    top:10%;
     height: 50%;
     width: 25%;
     position: relative;
@@ -214,11 +215,12 @@ img{
 }
 
 .project-content-desc{
-
+   top:10%;
     margin-left:31%;
     width: 59%;
     height:99%;
     text-align: start;
+    position: relative;
 }
 
 .project-content-desc h6{
@@ -230,13 +232,21 @@ img{
 @media (max-width:960px){
 
     .second{
-        overflow: scroll;
+        height: auto;
+        overflow: wrap;
     }
     .third{
-        overflow: scroll;
+        height: auto;
+        overflow: wrap;
     }
     .scroll-control{
         display: none;
+    }
+    .homepage-aboutme{
+        top:0;
+    }
+    .homepage-project{
+        top: 0;
     }
     .homepage-project-content-ol{
         position: relative;
