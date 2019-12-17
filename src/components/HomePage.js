@@ -18,12 +18,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import Projects from './homePagePieces/Projects';
+import Contact from './homePagePieces/Contact';
 
 class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      scrollIndex: 0
+      scrollIndex: 0,
     };
     this.scrollList = new Array("first", "second", "third", "fourth");
     this.handleScrollUp = this.handleScrollUp.bind(this);
@@ -113,7 +114,7 @@ class HomePage extends Component {
           <Projects/>
         </div>
         <div id="fourth" className="fourth element">
-          <p>this is blogbase-4</p>
+          <Contact />
         </div>
         <div className="scroll-control">
           <button className="scroll-control-up" onClick={this.handleScrollUp}>
