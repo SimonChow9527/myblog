@@ -7,8 +7,9 @@ const ProjectItem = props => {
         <img src={props.photo}></img>
       </div>
       <div className="project-content-desc">
-        <p>{props.title}</p>
-        <p>{props.role}</p>
+        <h4>{props.title}</h4>
+        <h6>{props.role}</h6>
+        <br />
         <p>{props.desc}</p>
       </div>
     </div>
