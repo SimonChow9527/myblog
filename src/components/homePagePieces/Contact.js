@@ -15,17 +15,30 @@ const Contact = () => {
 
       <div className="homepage-contact-content">
         <div className="homepage-contact-content-li">
-          <FontAwesomeIcon
-            icon={["fab", "linkedin"]}
-            size="5x"
-            color="#0e76a8"
-          />
+          <a
+            href="https://www.linkedin.com/in/simon-chow-developer"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "linkedin"]}
+              size="5x"
+              color="#0e76a8"
+            />
+          </a>
         </div>
         <div className="homepage-contact-content-li">
-          <FontAwesomeIcon icon={["fab", "github"]} size="5x" color="#211F1F" />
+          <a href="https://github.com/SimonChow9527" target="_blank">
+            <FontAwesomeIcon
+              icon={["fab", "github"]}
+              size="5x"
+              color="#211F1F"
+            />
+          </a>
         </div>
         <div className="homepage-contact-content-li">
-          <FontAwesomeIcon icon={faEnvelope} size="5x" color="#0e76a8" />
+          <a href="mailto:zhouxinmingzxm@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} size="5x" color="#0e76a8" />
+          </a>
         </div>
       </div>
     </div>
