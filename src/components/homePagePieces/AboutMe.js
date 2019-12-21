@@ -35,14 +35,16 @@ const AboutMe = () => {
       Backlog, planning meeting, stand up, retro, you name it, I got it. "
     />
   );
+
   const skill6 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={faUserGraduate} size="5x" />}
-      desc="I finished my master's degree in IT with GPA 3.7/4, which proves me to be a good learner. I recognize myself as a 
-      developer with the passion and willingness to pick up new skills and dig deeper into my current skills, so I
-       believe I can be a valuable asset to your team."
+      desc="I finished my master's degree in IT with GPA 3.7/4 , which proves me to be a good learner. I recognize myself as a 
+        developer with the passion and willingness to pick up new skills and dig deeper into my current skills, so I 
+        will be a valuable asset to your team."
     />
   );
+
   return (
     <div className="homepage-aboutme">
       <div className="homepage-aboutme-title">

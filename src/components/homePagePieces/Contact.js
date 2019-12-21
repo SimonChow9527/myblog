@@ -41,6 +41,10 @@ const Contact = () => {
           </a>
         </div>
       </div>
+
+      <a href="astrology">
+        <div className="mysterious-ball page-not-found"></div>{" "}
+      </a>
     </div>
   );
 };

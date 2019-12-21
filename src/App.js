@@ -5,6 +5,7 @@ import Blogs from "./components/Blogs";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
+import Astrology from './components/Astrology';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import * as dotenv from "dotenv";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -57,6 +58,7 @@ class App extends Component {
               <Route path="/blogs" component={Blogs} />
               <Route path="/projects" component={Projects} />
               <Route path="/contact" component={Contact} />
+              <Route path='/astrology' component={Astrology} />
               <Route component={PageNotFound} />
             </Switch>
           </div>

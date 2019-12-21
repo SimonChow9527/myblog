@@ -2,7 +2,6 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import "../styles/NavBarStyle.scss";
 import { Link } from "react-router-dom";
-import Navbar  from "react-bootstrap/Navbar";
 
 const MyNavBar = props => {
   return !props.isMobile ? ( 
