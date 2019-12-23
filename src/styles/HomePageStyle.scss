@@ -1,5 +1,5 @@
 @import 'Colors';
-@import 'PageNotFound';
+@import 'StyleLibrary';
 
 html, body{
     min-height:100%;
@@ -55,6 +55,7 @@ img{
 .third{
     width: 100%;
     height: auto;
+    min-height: 100%;
     overflow:wrap;
     background-color:$my-white;
     color:$my-black;

@@ -1,21 +1,26 @@
+@import 'Colors';
+
 .page-not-found {
-	margin: 0;
-	font-family: "Exo", sans-serif;
-	color: #fff;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradientBG 15s ease infinite;
+
+	height: 100%;
+	width: 100%;
 }
 
-@keyframes gradientBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.pnf-container{
+	
+	position: relative;
+	height: 60%;
+	width: 60%;
+	left: 20%;
+	top: 20%;
+	text-align: center;
+	color:$my-black;
 }
 
+.sub-container{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}

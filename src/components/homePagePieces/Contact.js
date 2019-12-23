@@ -43,7 +43,7 @@ const Contact = () => {
       </div>
 
       <a href="astrology">
-        <div className="mysterious-ball page-not-found"></div>{" "}
+        <div className="mysterious-ball gradient"></div>{" "}
       </a>
     </div>
   );
