@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../../styles/HomePageStyle.scss";
+import actionTypes from "../../actions/actionTypes";
+import * as actionCreators from "../../actions/actionCreators";
 
 
 class Intro extends Component {
@@ -20,7 +22,6 @@ class Intro extends Component {
     );
     this.iSpeed = 60; // time delay of print out
     this.iScrollAt = 20; // start scrolling up at this many lines
-
     this.state = {
       iIndex: 0, // start printing array at this posision
       iArrLength: this.aText[0].length, // the length of the text array
@@ -44,6 +45,8 @@ class Intro extends Component {
       () => {}
     );
   }
+
+  
 
   typewriter() {
     this.computeiRow();
