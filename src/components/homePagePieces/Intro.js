@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "../../styles/HomePageStyle.scss";
-import actionTypes from "../../actions/actionTypes";
 import * as actionCreators from "../../actions/actionCreators";
-
+import { connect } from "react-redux";
 
 class Intro extends Component {
   constructor(props) {
@@ -27,14 +26,28 @@ class Intro extends Component {
       iArrLength: this.aText[0].length, // the length of the text array
       iTextPos: 0, // initialise text position
       sContents: " ", // initialise contents variable
-      iRow: 0 // initialise current row
+      iRow: 0, // initialise current row
+      isMounted: true
     };
     this.typewriter = this.typewriter.bind(this);
     this.computeiRow = this.computeiRow.bind(this);
   }
 
   componentDidMount() {
-    this.typewriter();
+    this.setState(
+      {
+        isMounted: true
+      },
+      () => {
+        this.typewriter();
+      }
+    );
+  }
+
+  componentWillUnmount() {
+    this.setState({
+      isMounted: false
+    });
   }
 
   computeiRow() {
@@ -46,7 +59,6 @@ class Intro extends Component {
     );
   }
 
-  
   typewriter() {
     this.computeiRow();
     this.setState(prevState => {
@@ -55,6 +67,8 @@ class Intro extends Component {
       };
     });
     while (this.state.iRow < this.state.iIndex) {
+      if (this.state.isMounted) {
+      }
       this.setState(
         prevState => {
           return {
@@ -66,46 +80,48 @@ class Intro extends Component {
       );
     }
     let destination = document.getElementById("homepage-intro-content");
-    let substring =
-      this.state.iIndex % 2 !== 0
-        ? "<p>" +
-          this.aText[this.state.iIndex].substring(0, this.state.iTextPos) +
-          "</p>"
-        : this.aText[this.state.iIndex].substring(0, this.state.iTextPos);
-    let fulltext = "";
-    for (let i = 0; i <= this.state.iIndex; i++) {
-      fulltext += this.completeText[i];
-    }  
-      destination.innerHTML = fulltext + substring;     
-    if (this.state.iTextPos++ == this.state.iArrLength) {
-      this.setState(
-        prevState => {
-          return {
-            iTextPos: 0,
-            iIndex: prevState.iIndex + 1
-          };
-        },
-        () => {}
-      );
-      if (this.state.iIndex != this.aText.length) {
-        this.setState({
-          iArrLength: this.aText[this.state.iIndex].length
-        });
+    if (destination !== null) {
+      let substring =
+        this.state.iIndex % 2 !== 0
+          ? "<p>" +
+            this.aText[this.state.iIndex].substring(0, this.state.iTextPos) +
+            "</p>"
+          : this.aText[this.state.iIndex].substring(0, this.state.iTextPos);
+      let fulltext = "";
+      for (let i = 0; i <= this.state.iIndex; i++) {
+        fulltext += this.completeText[i];
+      }
+      destination.innerHTML = fulltext + substring;
+      if (this.state.iTextPos++ == this.state.iArrLength) {
+        this.setState(
+          prevState => {
+            return {
+              iTextPos: 0,
+              iIndex: prevState.iIndex + 1
+            };
+          },
+          () => {}
+        );
+        if (this.state.iIndex != this.aText.length) {
+          this.setState({
+            iArrLength: this.aText[this.state.iIndex].length
+          });
+          setTimeout(() => {
+            this.typewriter();
+          }, 500);
+        }
+      } else {
         setTimeout(() => {
           this.typewriter();
-        }, 500);
+        }, this.iSpeed);
       }
-    } else {
-      setTimeout(() => {
-        this.typewriter();
-      }, this.iSpeed);
     }
   }
+
   render() {
     return (
       <div className="homepage-intro">
-        <div className="homepage-intro-bg">
-        </div>
+        <div className="homepage-intro-bg"></div>
         <div
           className="homepage-intro-content"
           id="homepage-intro-content"
@@ -115,4 +131,10 @@ class Intro extends Component {
   }
 }
 
-export default Intro;
+const mapDispatchToProps = dispatch => {
+  return {
+    showNav: data => dispatch(actionCreators.changeNavStatus(data))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Intro);

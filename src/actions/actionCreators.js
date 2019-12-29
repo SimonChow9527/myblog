@@ -1,6 +1,6 @@
 import actionTypes from "./actionTypes";
 
-export function changePrinterStatus(showNav){
+export function changeNavStatus(showNav){
     return {
         type:actionTypes.CHANGE_NAV_VISIBILITY,
         showNav:showNav
