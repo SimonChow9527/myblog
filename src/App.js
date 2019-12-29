@@ -10,6 +10,8 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import * as dotenv from "dotenv";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import * as actionCreators from "../src/actions/actionCreators";
+import { connect } from "react-redux";
 
 dotenv.config();
 library.add(fab);
@@ -17,27 +19,23 @@ library.add(fab);
 class App extends Component {
   constructor(props) {
     super(props);
+    this.CheckMobile = this.CheckMobile.bind(this);
   }
 
-  ////////////may be useful in future
-  /* CheckMobile() {
+  ////////////may be useful in future///////////
+  CheckMobile() {
     let isMobile =
       window.screen.width < parseInt(process.env.REACT_APP_MOBILE_WIDTH);
-    this.setState(
-      {
-        isMobile: isMobile
-      },
-      () => {}
-    );
-  }*/
+    this.props.isMobile(isMobile);
+  }
   //////////////////////////////////////////
 
   componentDidMount() {
-    /* window.addEventListener("resize", this.CheckMobile);
-    this.CheckMobile();*/
+    window.addEventListener("resize", this.CheckMobile);
+    this.CheckMobile();
   }
   componentWillUnmount() {
-    /* window.removeEventListener("resize", this.CheckMobile);*/
+    window.removeEventListener("resize", this.CheckMobile);
   }
 
   render() {
@@ -64,4 +62,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+  return {
+    isMobile: data => dispatch(actionCreators.setIsMobile(data))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);

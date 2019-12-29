@@ -2,8 +2,12 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import "../styles/NavBarStyle.scss";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-const MyNavBar = () => {
+
+
+
+const MyNavBar = (props) => {
   return  ( 
       <Nav className="nav" activeKey="/home">
         <Nav.Item>
@@ -46,11 +50,17 @@ const MyNavBar = () => {
             eventKey="contact"
             className="nav-link-normal"
           >
-            Contact me
+          Contact me
           </Nav.Link>
         </Nav.Item>
       </Nav>
   ) 
 };
 
-export default MyNavBar;
+function mapStateToProps(state){
+  return{
+    isMobile:state.mobileReducer.isMobile
+  }
+}
+
+export default connect(mapStateToProps)(MyNavBar);

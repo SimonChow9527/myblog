@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 
 function showNav(state = true, action) {
   switch (action.type) {
-    case CHANGE_NAV_VISIBILITY:
+    case "CHANGE_NAV_VISIBILITY":
       return action.showNav;
     default:
       return state;
@@ -11,7 +11,7 @@ function showNav(state = true, action) {
 
 function isMobile(state = false, action) {
   switch (action.type) {
-    case IS_MOBILE:
+    case "IS_MOBILE":
       return action.isMobile;
     default:
       return state;
