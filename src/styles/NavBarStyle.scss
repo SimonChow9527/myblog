@@ -4,19 +4,26 @@
     width:100%;
     top: 0;
     z-index: 1;
+    justify-content: flex-end;
     background-color: $my-black;
+    
 }
 
-.nav-mobile{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    background-color: $my-black;
-    justify-content: center;
-} 
 .nav-link-normal{
 
     cursor:  pointer !important;
     color:$my-white ;
     z-index: 1;
+}
+
+@media (max-width:960px){
+
+    .nav{
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: $my-black;
+        justify-content: center;
+    } 
+
 }

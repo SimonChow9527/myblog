@@ -47,7 +47,6 @@ class Intro extends Component {
   }
 
   
-
   typewriter() {
     this.computeiRow();
     this.setState(prevState => {
