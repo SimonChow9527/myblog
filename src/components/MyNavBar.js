@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 const MyNavBar = props => {
-  console.log(props);
   return (
     <Nav className="nav" activeKey="/home">
       <Nav.Item>
@@ -30,16 +29,6 @@ const MyNavBar = props => {
         </Nav.Link>
       </Nav.Item>
 
-      <Nav.Item>
-        <Nav.Link
-          as={Link}
-          to="/blogs"
-          eventKey="blog"
-          className="nav-link-normal"
-        >
-          Blogs
-        </Nav.Link>
-      </Nav.Item>
 
       <Nav.Item>
         <Nav.Link

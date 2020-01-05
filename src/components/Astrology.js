@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import "../styles/AstrologyStyle.scss";
 
 class Astrology extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

@@ -7,7 +7,7 @@ const AboutMe = () => {
   const skill1 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "react"]} size="5x" />}
-      desc="Multiple project experience using React framework,"
+      desc="Multiple project experience using React framework, Tempor exercitation culpa ipsum laboris amet elit dolore culpa deserunt veniam. Proident proident nisi et deserunt ad in proident cillum nisi adipisicing. Ea aute aute est Lorem amet sint cupidatat culpa. Ex elit ad eu enim duis ad ipsum. Qui fugiat culpa ad do do in Lorem ad nisi quis est fugiat elit. Reprehenderit elit reprehenderit id qui officia qui dolor. Lorem aliquip officia anim laborum tempor duis ipsum dolore."
     />
   );
   const skill2 = (
@@ -52,8 +52,10 @@ const AboutMe = () => {
         <hr />
       </div>
       <div className="homepage-aboutme-content">
-        <div>What I can do & </div>
-        <div>Why you might want to hire me</div>
+        <div>
+          What I can do & <br />
+          Why you might want to hire me
+        </div>
         <ul className="homepage-aboutme-content-ul">
           <li className="homepage-aboutme-content-li">{skill1}</li>
           <li className="homepage-aboutme-content-li">{skill2}</li>

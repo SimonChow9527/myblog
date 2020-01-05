@@ -13,3 +13,11 @@ export function setIsMobile(isMobile){
         isMobile:isMobile
     }
 }
+
+
+export function setPrinter(showPrinter){
+    return {
+        type:actionTypes.SHOW_PRINTER,
+        showPrinter:showPrinter
+    }
+}

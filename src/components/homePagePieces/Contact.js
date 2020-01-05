@@ -18,6 +18,7 @@ const Contact = () => {
           <a
             href="https://www.linkedin.com/in/simon-chow-developer"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               icon={["fab", "linkedin"]}
@@ -27,7 +28,7 @@ const Contact = () => {
           </a>
         </div>
         <div className="homepage-contact-content-li">
-          <a href="https://github.com/SimonChow9527" target="_blank">
+          <a href="https://github.com/SimonChow9527" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={["fab", "github"]}
               size="5x"

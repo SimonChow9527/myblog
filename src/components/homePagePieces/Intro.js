@@ -26,28 +26,27 @@ class Intro extends Component {
       iArrLength: this.aText[0].length, // the length of the text array
       iTextPos: 0, // initialise text position
       sContents: " ", // initialise contents variable
-      iRow: 0, // initialise current row
-      isMounted: true
+      iRow: 0 // initialise current row
     };
     this.typewriter = this.typewriter.bind(this);
     this.computeiRow = this.computeiRow.bind(this);
   }
 
   componentDidMount() {
-    this.setState(
-      {
-        isMounted: true
-      },
-      () => {
-        this.typewriter();
-      }
-    );
+    if (this.props.showPrinter) {
+      this.typewriter();
+    } else {
+      let destination = document.getElementById("homepage-intro-content");
+      destination.innerHTML =
+        "Hey, this is<br/>" +
+        "<p>Simon Chow</p><br/>" +
+        "and I'm a<br/>" +
+        "<p>Developer</p>";
+    }
   }
 
   componentWillUnmount() {
-    this.setState({
-      isMounted: false
-    });
+    this.props.setPrinter(false);
   }
 
   computeiRow() {
@@ -60,24 +59,22 @@ class Intro extends Component {
   }
 
   typewriter() {
-    this.computeiRow();
-    this.setState(prevState => {
-      return {
+    if (this.props.showPrinter) {
+      this.computeiRow();
+      this.setState({
         sContents: " "
-      };
-    });
-    while (this.state.iRow < this.state.iIndex) {
-      if (this.state.isMounted) {
+      });
+
+      while (this.state.iRow < this.state.iIndex) {
+        if (this.props.showPrinter) {
+          this.setState(prevState => {
+            return {
+              sContents:
+                prevState.sContents + this.aText[this.state.iRow++] + "<br/>"
+            };
+          });
+        }
       }
-      this.setState(
-        prevState => {
-          return {
-            sContents:
-              prevState.sContents + this.aText[this.state.iRow++] + "<br/>"
-          };
-        },
-        () => {}
-      );
     }
     let destination = document.getElementById("homepage-intro-content");
     if (destination !== null) {
@@ -92,20 +89,23 @@ class Intro extends Component {
         fulltext += this.completeText[i];
       }
       destination.innerHTML = fulltext + substring;
-      if (this.state.iTextPos++ == this.state.iArrLength) {
-        this.setState(
-          prevState => {
-            return {
-              iTextPos: 0,
-              iIndex: prevState.iIndex + 1
-            };
-          },
-          () => {}
-        );
-        if (this.state.iIndex != this.aText.length) {
+      if (this.state.iTextPos++ === this.state.iArrLength) {
+        if (this.props.showPrinter) {
+          this.setState(
+            prevState => {
+              return {
+                iTextPos: 0,
+                iIndex: prevState.iIndex + 1
+              };
+            },
+            () => {}
+          );
+        }
+        if (this.state.iIndex !== this.aText.length && this.props.showPrinter) {
           this.setState({
             iArrLength: this.aText[this.state.iIndex].length
           });
+
           setTimeout(() => {
             this.typewriter();
           }, 500);
@@ -131,10 +131,16 @@ class Intro extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    showPrinter: state.printerReducer.showPrinter
+  };
+};
 const mapDispatchToProps = dispatch => {
   return {
-    showNav: data => dispatch(actionCreators.changeNavStatus(data))
+    showNav: data => dispatch(actionCreators.changeNavStatus(data)),
+    setPrinter: data => dispatch(actionCreators.setPrinter(data))
   };
 };
 
-export default connect(null, mapDispatchToProps)(Intro);
+export default connect(mapStateToProps, mapDispatchToProps)(Intro);
