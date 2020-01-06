@@ -34,7 +34,7 @@ const Projects = () => {
         <li className="homepage-project-content-li">
           <ProjectItem
             photo={webjet}
-            title="Anywhere search"
+            title="Coffee Shop"
             role="Front-end developer | Jul 2019-Oct 2019 "
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />
@@ -42,7 +42,16 @@ const Projects = () => {
         <li className="homepage-project-content-li">
           <ProjectItem
             photo={webjet}
-            title="Anywhere search"
+            title="Tweets Analysis"
+            role="Front-end developer | Jul 2019-Oct 2019 "
+            desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
+          />
+        </li>
+
+        <li className="homepage-project-content-li">
+          <ProjectItem
+            photo={webjet}
+            title="ASR Teaching Assistant System"
             role="Front-end developer | Jul 2019-Oct 2019 "
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />

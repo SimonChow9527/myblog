@@ -101,7 +101,7 @@ class Intro extends Component {
             () => {}
           );
         }
-        if (this.state.iIndex !== this.aText.length && this.props.showPrinter) {
+        if (this.state.iIndex !== this.aText.length) {
           this.setState({
             iArrLength: this.aText[this.state.iIndex].length
           });

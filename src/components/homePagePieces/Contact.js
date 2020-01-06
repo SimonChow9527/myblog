@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+
 const Contact = () => {
   return (
     <div className="homepage-contact">
@@ -42,10 +43,10 @@ const Contact = () => {
           </a>
         </div>
       </div>
-
+     
       <a href="astrology">
         <div className="mysterious-ball gradient"></div>{" "}
-      </a>
+      </a> 
     </div>
   );
 };
