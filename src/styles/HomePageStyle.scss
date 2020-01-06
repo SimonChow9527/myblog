@@ -45,7 +45,7 @@ img{
 }
 
 .second{ 
-    height: auto;
+
     min-height: 100%;
     width: 100%;
     overflow: wrap;
@@ -153,8 +153,6 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
-    margin-top: 2%;
     padding: 0;
 }
 .homepage-aboutme-content-li{
@@ -227,7 +225,7 @@ img{
     position: relative;
 }
 
-.project-content-desc h6{
+.project-content-desc h5{
     text-decoration: underline;
 }
 
@@ -329,7 +327,7 @@ img{
     width: 100%;
     text-align: start;
 }
-.project-content-desc h4,h6{
+.project-content-desc h4,h5{
    text-align: center;
 }
 
