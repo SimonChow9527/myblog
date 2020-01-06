@@ -4,11 +4,7 @@ import Intro from "./homePagePieces/Intro";
 import AboutMe from "./homePagePieces/AboutMe";
 import {
   Link,
-  DirectLink,
-  Element,
   Events,
-  animateScroll as scroll,
-  scrollSpy,
   scroller
 } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

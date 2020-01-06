@@ -5,11 +5,13 @@ import Blogs from "./components/Blogs";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
-import Astrology from './components/Astrology';
+import Astrology from "./components/Astrology";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import * as dotenv from "dotenv";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import * as actionCreators from "../src/actions/actionCreators";
+import { connect } from "react-redux";
 
 dotenv.config();
 library.add(fab);
@@ -18,22 +20,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.CheckMobile = this.CheckMobile.bind(this);
-
-    this.state = {
-      isMobile: ""
-    };
   }
 
+  ////////////may be useful in future///////////
   CheckMobile() {
     let isMobile =
       window.screen.width < parseInt(process.env.REACT_APP_MOBILE_WIDTH);
-    this.setState(
-      {
-        isMobile: isMobile
-      },
-      () => {}
-    );
+    this.props.isMobile(isMobile);
   }
+  //////////////////////////////////////////
 
   componentDidMount() {
     window.addEventListener("resize", this.CheckMobile);
@@ -48,8 +43,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <div className="nav-bar">
-            <MyNavbar isMobile={this.state.isMobile} />
-            {/*could use @media but maybe this state parameter will be useful in future */}
+            <MyNavbar />
           </div>
           <div className="content">
             <Switch>
@@ -58,7 +52,7 @@ class App extends Component {
               <Route path="/blogs" component={Blogs} />
               <Route path="/projects" component={Projects} />
               <Route path="/contact" component={Contact} />
-              <Route path='/astrology' component={Astrology} />
+              <Route path="/astrology" component={Astrology} />
               <Route component={PageNotFound} />
             </Switch>
           </div>
@@ -68,4 +62,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+  return {
+    isMobile: data => dispatch(actionCreators.setIsMobile(data))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);
