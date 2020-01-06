@@ -20,6 +20,7 @@ const Projects = () => {
             photo={blog}
             title="Personal Blog "
             role="Full-Stack developer | Dec 2019-Present"
+            keyword="Keyword: dasd das das"
             desc="Proident irure commodo exercitation dolore ipsum aute mollit. Esse labore et officia laborum enim. Tempor nostrud deserunt dolore minim Lorem do incididunt sit consequat mollit officia minim id. Officia ad anim culpa consectetur elit elit sint excepteur incididunt fugiat Lorem veniam deserunt."
           />
         </li>
@@ -28,6 +29,7 @@ const Projects = () => {
             photo={webjet}
             title="Anywhere search"
             role="Front-end developer | Jul 2019-Oct 2019 "
+            keyword="Keyword: dasd das das"
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />
         </li>
@@ -36,6 +38,7 @@ const Projects = () => {
             photo={webjet}
             title="Coffee Shop"
             role="Front-end developer | Jul 2019-Oct 2019 "
+            keyword="Keyword: dasd das das"
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />
         </li>
@@ -44,6 +47,7 @@ const Projects = () => {
             photo={webjet}
             title="Tweets Analysis"
             role="Front-end developer | Jul 2019-Oct 2019 "
+            keyword="Keyword: dasd das das"
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />
         </li>
@@ -53,6 +57,7 @@ const Projects = () => {
             photo={webjet}
             title="ASR Teaching Assistant System"
             role="Front-end developer | Jul 2019-Oct 2019 "
+            keyword="Keyword: dasd das das"
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />
         </li>

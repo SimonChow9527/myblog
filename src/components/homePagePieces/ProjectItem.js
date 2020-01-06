@@ -8,8 +8,9 @@ const ProjectItem = props => {
       </div>
       <div className="project-content-desc">
         <h4>{props.title}</h4>
-        <h6>{props.role}</h6>
+        <h5>{props.role}</h5>
         <br />
+        <h6>{props.keyword}</h6>
         <p>{props.desc}</p>
       </div>
     </div>

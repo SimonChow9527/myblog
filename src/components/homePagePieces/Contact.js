@@ -38,7 +38,7 @@ const Contact = () => {
           </a>
         </div>
         <div className="homepage-contact-content-li">
-          <a href="mailto:zhouxinmingzxm@gmail.com">
+          <a href="mailto:zhouxinming.dev@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} size="5x" color="#0e76a8" />
           </a>
         </div>

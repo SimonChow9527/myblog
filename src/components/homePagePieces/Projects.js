@@ -19,7 +19,8 @@ const Projects = () => {
             photo={blog}
             title="Personal Blog "
             role="Full-Stack developer | Dec 2019-Present"
-            desc="Proident irure commodo exercitation dolore ipsum aute mollit. Esse labore et officia laborum enim. Tempor nostrud deserunt dolore minim Lorem do incididunt sit consequat mollit officia minim id. Officia ad anim culpa consectetur elit elit sint excepteur incididunt fugiat Lorem veniam deserunt."
+            keyword="Keyword: dasd das das"
+            desc=" Nulla quis in aliquip pariatur id. Quis est excepteur eu proident nulla officia enim elit consequat in nulla. Excepteur dolore amet irure nisi aute."
           />
         </li>
         <li className="homepage-project-content-li">
@@ -27,6 +28,7 @@ const Projects = () => {
             photo={webjet}
             title="Anywhere search"
             role="Front-end developer | Jul 2019-Oct 2019 "
+            keyword="Keyword: dasd das das"
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />
         </li>

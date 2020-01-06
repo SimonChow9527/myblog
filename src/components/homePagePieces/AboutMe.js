@@ -7,41 +7,38 @@ const AboutMe = () => {
   const skill1 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "react"]} size="5x" />}
-      desc="Multiple project experience using React framework, Tempor exercitation culpa ipsum laboris amet elit dolore culpa deserunt veniam. Proident proident nisi et deserunt ad in proident cillum nisi adipisicing. Ea aute aute est Lorem amet sint cupidatat culpa. Ex elit ad eu enim duis ad ipsum. Qui fugiat culpa ad do do in Lorem ad nisi quis est fugiat elit. Reprehenderit elit reprehenderit id qui officia qui dolor. Lorem aliquip officia anim laborum tempor duis ipsum dolore."
+      desc="Have tried other frontend frameworks and worked on many projects with React, I finally start to understand why React is so popular: stable, flexible, reliable, and has a vibrant community. I'm familiar with intermediate-level usage like hook or redux and is planning to go further with React and see what it has to offer."
     />
   );
   const skill2 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "js"]} size="5x" />}
-      desc="this section is for JS/html/scssthis section is for JS/html/scssthis section is for JS/html/scssthis section is for JS/html/scss"
+      desc="Every front-end developer needs to know HTML, CSS(SCSS), JavaScript(TypeScript) and a testing technique (Jest or Enzyme), so do I. I'm confident in implementing complicated layout design and bring ideas(reasonable ones) into reality."
     />
   );
   const skill3 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "dev"]} size="5x" />}
-      desc="RESTful API and microservices this section is for backend java .net yo yo yo yo"
+      desc="There is a trend in the industry that companies split their old monolithic codebase into microservices, which I believe is the future. I have experience in RESTful API design and implementation in .NET core and for this blog, I'm going to implement it as a serverless application and make use of AWS Lambda."
     />
   );
   const skill4 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "aws"]} size="5x" />}
-      desc="Ochestrate cloud products to achieve development requirements. la la la "
+      desc="Orchestrate cloud products to achieve development requirements has been enjoyable: you focus on coding, give them your credit card information, and they will take care of the rest. As a developer who just started his career recently, cloud technology is absolutely a good-to-have skill. I got some hands-on experience of how things should work, but I'm planning to do some systematic learning and acquire an AWS cloud certificate by the end of 2020."
     />
   );
   const skill5 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={faFont} size="5x" />}
-      desc="I have hands on experience with Agile so I can get familiar with development process quickly. 
-      Backlog, planning meeting, stand up, retro, you name it, I got it. "
+      desc="I got hands-on experience with Agile from my last internship with Webjet, so I'm quite familiar with the development process. Backlog, planning meeting, stand up, retro, you name it, I got it. "
     />
   );
 
   const skill6 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={faUserGraduate} size="5x" />}
-      desc="I finished my master's degree in IT with GPA 3.7/4 , which proves me to be a good learner. I recognize myself as a 
-        developer with the passion and willingness to pick up new skills and dig deeper into my current skills, so I 
-        will be a valuable asset to your team."
+      desc="I finished my master's degree in IT with a GPA of 3.7/4, which proves that I'm a good learner. I recognize myself as a developer with the passion and willingness to pick up new skills and dig deeper into my current skills. And I believe that's essential for a successful career."
     />
   );
 
