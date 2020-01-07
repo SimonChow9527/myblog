@@ -13,7 +13,7 @@ const AboutMe = () => {
   const skill2 = (
     <AboutMeSkills
       icon={<FontAwesomeIcon icon={["fab", "js"]} size="5x" />}
-      desc="Every front-end developer needs to know HTML, CSS(SCSS), JavaScript(TypeScript) and a testing technique (Jest or Enzyme), so do I. I'm confident in implementing complicated layout design and bring ideas(reasonable ones) into reality."
+      desc="Every front-end developer needs to know HTML5, CSS(SCSS), JavaScript ES6/TypeScript and a testing technique (Jest or Enzyme), so do I. I'm confident in implementing complicated layout design and bring ideas(reasonable ones) into reality."
     />
   );
   const skill3 = (

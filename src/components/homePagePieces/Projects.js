@@ -19,8 +19,8 @@ const Projects = () => {
             photo={blog}
             title="Personal Blog "
             role="Full-Stack developer | Dec 2019-Present"
-            keyword="Keyword: dasd das das"
-            desc=" Nulla quis in aliquip pariatur id. Quis est excepteur eu proident nulla officia enim elit consequat in nulla. Excepteur dolore amet irure nisi aute."
+            keyword="Keyword: React, React-Redux, .NET core, AWS"
+            desc="I've been working on this project since last December. It is a place not only to introduce myself but also to sharpen what I've learned: from design to implementation, from front-end to back-end, cloud, etc. And I also keep doing code refactoring and adding new features to make it looks even better."
           />
         </li>
         <li className="homepage-project-content-li">
@@ -28,7 +28,7 @@ const Projects = () => {
             photo={webjet}
             title="Anywhere search"
             role="Front-end developer | Jul 2019-Oct 2019 "
-            keyword="Keyword: dasd das das"
+            keyword="Keyword: React, TypeScript, HTML5, SCSS, Redux-saga, Enzyme"
             desc="Incididunt aute anim culpa consequat nostrud proident nostrud in ullamco laborum. Enim incididunt in cillum qui ad. Commodo id amet consequat nulla mollit veniam culpa enim officia proident labore nostrud ea. Nisi in irure elit velit deserunt."
           />
         </li>
