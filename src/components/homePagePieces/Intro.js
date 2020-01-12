@@ -4,6 +4,7 @@ import * as actionCreators from "../../actions/actionCreators";
 import { connect } from "react-redux";
 
 class Intro extends Component {
+  _isMounted = false;
   constructor(props) {
     super(props);
     this.aText = new Array(
@@ -34,6 +35,7 @@ class Intro extends Component {
 
   componentDidMount() {
     if (this.props.showPrinter) {
+      this._isMounted = true;
       this.typewriter();
     } else {
       let destination = document.getElementById("homepage-intro-content");
@@ -47,19 +49,17 @@ class Intro extends Component {
 
   componentWillUnmount() {
     this.props.setPrinter(false);
+    this._isMounted = false;
   }
 
   computeiRow() {
-    this.setState(
-      {
-        iRow: Math.max(0, this.state.iIndex - this.iScrollAt)
-      },
-      () => {}
-    );
+    this.setState({
+      iRow: Math.max(0, this.state.iIndex - this.iScrollAt)
+    });
   }
 
   typewriter() {
-    if (this.props.showPrinter) {
+    if (this._isMounted) {
       this.computeiRow();
       this.setState({
         sContents: " "
@@ -75,45 +75,46 @@ class Intro extends Component {
           });
         }
       }
-    }
-    let destination = document.getElementById("homepage-intro-content");
-    if (destination !== null) {
-      let substring =
-        this.state.iIndex % 2 !== 0
-          ? "<p>" +
-            this.aText[this.state.iIndex].substring(0, this.state.iTextPos) +
-            "</p>"
-          : this.aText[this.state.iIndex].substring(0, this.state.iTextPos);
-      let fulltext = "";
-      for (let i = 0; i <= this.state.iIndex; i++) {
-        fulltext += this.completeText[i];
-      }
-      destination.innerHTML = fulltext + substring;
-      if (this.state.iTextPos++ === this.state.iArrLength) {
-        if (this.props.showPrinter) {
-          this.setState(
-            prevState => {
-              return {
-                iTextPos: 0,
-                iIndex: prevState.iIndex + 1
-              };
-            },
-            () => {}
-          );
-        }
-        if (this.state.iIndex !== this.aText.length) {
-          this.setState({
-            iArrLength: this.aText[this.state.iIndex].length
-          });
 
+      let destination = document.getElementById("homepage-intro-content");
+      if (destination !== null) {
+        let substring =
+          this.state.iIndex % 2 !== 0
+            ? "<p>" +
+              this.aText[this.state.iIndex].substring(0, this.state.iTextPos) +
+              "</p>"
+            : this.aText[this.state.iIndex].substring(0, this.state.iTextPos);
+        let fulltext = "";
+        for (let i = 0; i <= this.state.iIndex; i++) {
+          fulltext += this.completeText[i];
+        }
+        destination.innerHTML = fulltext + substring;
+        if (this.state.iTextPos++ === this.state.iArrLength) {
+          if (this.props.showPrinter) {
+            this.setState(
+              prevState => {
+                return {
+                  iTextPos: 0,
+                  iIndex: prevState.iIndex + 1
+                };
+              },
+              () => {}
+            );
+          }
+          if (this.state.iIndex !== this.aText.length) {
+            this.setState({
+              iArrLength: this.aText[this.state.iIndex].length
+            });
+
+            setTimeout(() => {
+              this.typewriter();
+            }, 500);
+          }
+        } else {
           setTimeout(() => {
             this.typewriter();
-          }, 500);
+          }, this.iSpeed);
         }
-      } else {
-        setTimeout(() => {
-          this.typewriter();
-        }, this.iSpeed);
       }
     }
   }
