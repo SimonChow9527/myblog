@@ -1,6 +1,10 @@
-This is a personal blog.
+# Personal Blog
 
-Visit simonchow.dev for more info.
+This is a personal blog, visit [here](https://simonchow.dev) for more info.
 
-Enjoy.
+# Tech stack
+ * ReactJS
+ * HTML5
+ * SCSS
+ * React-Redux
 
