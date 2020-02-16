@@ -2,7 +2,6 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import "../styles/NavBarStyle.scss";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
 
 const MyNavBar = props => {
   return (
@@ -21,6 +20,16 @@ const MyNavBar = props => {
       <Nav.Item>
         <Nav.Link
           as={Link}
+          to="/aboutme"
+          eventKey="about"
+          className="nav-link-normal"
+        >
+          About me
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link
+          as={Link}
           to="/projects"
           eventKey="projects"
           className="nav-link-normal"
@@ -29,7 +38,6 @@ const MyNavBar = props => {
         </Nav.Link>
       </Nav.Item>
 
-
       <Nav.Item>
         <Nav.Link
           as={Link}
@@ -37,18 +45,11 @@ const MyNavBar = props => {
           eventKey="contact"
           className="nav-link-normal"
         >
-          Contact me
+          Contact
         </Nav.Link>
       </Nav.Item>
     </Nav>
   );
 };
 
-function mapStateToProps(state) {
-  return {
-    isMobile: state.mobileReducer.isMobile,
-    showNav: state.navReducer.showNav
-  };
-}
-
-export default connect(mapStateToProps)(MyNavBar);
+export default MyNavBar;

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "../../styles/HomePageStyle.scss";
-import * as actionCreators from "../../actions/actionCreators";
-import { connect } from "react-redux";
 
 class Intro extends Component {
   _isMounted = false;
@@ -45,11 +43,6 @@ class Intro extends Component {
         "and I'm a<br/>" +
         "<p>Developer</p>";
     }
-  }
-
-  componentWillUnmount() {
-    this.props.setPrinter(false);
-    this._isMounted = false;
   }
 
   computeiRow() {
@@ -132,16 +125,4 @@ class Intro extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    showPrinter: state.printerReducer.showPrinter
-  };
-};
-const mapDispatchToProps = dispatch => {
-  return {
-    showNav: data => dispatch(actionCreators.changeNavStatus(data)),
-    setPrinter: data => dispatch(actionCreators.setPrinter(data))
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Intro);
+export default Intro;
