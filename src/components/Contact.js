@@ -8,10 +8,9 @@ const Contact = () => {
     <div className="contact-container">
       <div className="title-container">
         <div className="contact-title">Contact me</div>
-        <div className="contact-subtitle">Let's get in touch!</div>
       </div>
-      <div className="homepage-contact-content">
-        <div className="homepage-contact-content-li">
+      <div className="contact-content">
+        <div className="contact-content-li">
           <a
             href="https://www.linkedin.com/in/simon-chow-developer"
             target="_blank"
@@ -24,7 +23,7 @@ const Contact = () => {
             />
           </a>
         </div>
-        <div className="homepage-contact-content-li">
+        <div className="contact-content-li">
           <a
             href="https://github.com/SimonChow9527"
             target="_blank"
@@ -37,7 +36,7 @@ const Contact = () => {
             />
           </a>
         </div>
-        <div className="homepage-contact-content-li">
+        <div className="contact-content-li">
           <a href="mailto:zhouxinming.dev@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} size="5x" color="#0e76a8" />
           </a>

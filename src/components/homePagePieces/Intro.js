@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "../../styles/HomePageStyle.scss";
-import * as actionCreators from "../../actions/actionCreators";
-import { connect } from "react-redux";
 
 class Intro extends Component {
   _isMounted = false;
@@ -11,14 +9,14 @@ class Intro extends Component {
       "Hey, this is",
       "Simon Chow",
       "and I'm a",
-      "Developer"
+      "Software Developer"
     );
     this.completeText = new Array(
       "",
       "Hey, this is<br/>",
       "<p>Simon Chow</p><br/>",
       "and I'm a<br/>",
-      "<p>Developer</p>"
+      "<p>Software Developer</p>"
     );
     this.iSpeed = 60; // time delay of print out
     this.iScrollAt = 20; // start scrolling up at this many lines
@@ -43,13 +41,8 @@ class Intro extends Component {
         "Hey, this is<br/>" +
         "<p>Simon Chow</p><br/>" +
         "and I'm a<br/>" +
-        "<p>Developer</p>";
+        "<p> Software Developer</p>";
     }
-  }
-
-  componentWillUnmount() {
-    this.props.setPrinter(false);
-    this._isMounted = false;
   }
 
   computeiRow() {
@@ -132,16 +125,4 @@ class Intro extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    showPrinter: state.printerReducer.showPrinter
-  };
-};
-const mapDispatchToProps = dispatch => {
-  return {
-    showNav: data => dispatch(actionCreators.changeNavStatus(data)),
-    setPrinter: data => dispatch(actionCreators.setPrinter(data))
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Intro);
+export default Intro;

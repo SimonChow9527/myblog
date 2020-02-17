@@ -3,7 +3,7 @@
 
 html, body{
     min-height:100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  'Quicksand', sans-serif !important;
     font-size: 16px;
    
 }
@@ -19,18 +19,9 @@ body{height:100vh;}
     position: relative; 
   
 }
-
 img{
     max-width: 100%;
     max-height: 100%;
-}
-
-
-.content{
-    top:0;
-    width: 100%;
-    height: 100%;
-    margin: 0px ;
 }
 
 .home-container{
@@ -38,36 +29,6 @@ img{
     width: 100%;
 }
 
-.first{
-    height: 100%;
-    width: 100%;
-    background-color:$my-white;
-}
-
-.second{ 
-
-    min-height: 100%;
-    width: 100%;
-    overflow: wrap;
-    background-color:$my-lightgrey;
-    color:$my-black;
-}
-
-.third{
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    overflow:wrap;
-    background-color:$my-white;
-    color:$my-black;
-}
-
-.fourth{
-    height: 100%;
-    width: 100%;
-    background-color:$my-lightgrey;
-    color:$my-black;
-}
 
 .homepage-intro{
     height: 100%;
@@ -125,45 +86,8 @@ img{
    }
 }
 
-.homepage-aboutme{
-   
-    position: relative;
-    width: 100%;
-}
 
-.homepage-aboutme-title{
-    top:3vh;
-    font-size: 10vh;
-    height: 20%;
-    text-align: center;
-    position: relative;
-}
 
-.homepage-aboutme-title hr{
-    margin: 0px;
-}
-
-.homepage-aboutme-content{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    align-content: center;
-    overflow: wrap;
-}
-.homepage-aboutme-content-ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-}
-.homepage-aboutme-content-li{
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;
-    border: 10px;
-    margin: 20px 20px 20px 20px;
-    list-style-type:none;
-}
 .homepage-project{
     top:3vh;
     position: relative;
@@ -230,66 +154,12 @@ img{
     text-decoration: underline;
 }
 
-.homepage-contact{
-    top:3vh;
-    position: relative;
-    width: 100%;
-    height: 80%;
-    align-items: center;
-    justify-content: center;
-}
-
-.homepage-contact-title{  
-    height: 20%;
-    text-align: center;
-    position: relative;
-}
-.homepage-contact-title-desc{
-    font-size: 10vh;
-}
-
-.homepage-contact-title hr{
-    margin: 0px;
-}
-
-.homepage-contact-content{
-    display: flex;
-    justify-content: space-between;
-    top:30%;
-    left: 20%;
-    height:60%;
-    width: 60%;
-    position: relative;
-}
-
-.mysterious-ball{
-    visibility: hidden;
-    position: absolute;
-    bottom: 5px;
-    left:10px;
-    z-index: 2;
-    display: block;
-    border-radius: 100%;
-    height: 50px;
-    width: 50px;
-    box-shadow: 0 0 15px 0 $light-blue-gray;
-}
-
 
 
 ////////don't forget to implement mobile mode/////////////////////////
 @media (max-width:960px){
 
-    .third{
-        height: auto;
-        overflow: wrap;
-    }
-    .scroll-control{
-        display: none;
-    }
-    .homepage-aboutme{
-        top:0;
-    }
+
     .homepage-project{
         top: 0;
     }
