@@ -9,14 +9,14 @@ class Intro extends Component {
       "Hey, this is",
       "Simon Chow",
       "and I'm a",
-      "Developer"
+      "Software Developer"
     );
     this.completeText = new Array(
       "",
       "Hey, this is<br/>",
       "<p>Simon Chow</p><br/>",
       "and I'm a<br/>",
-      "<p>Developer</p>"
+      "<p>Software Developer</p>"
     );
     this.iSpeed = 60; // time delay of print out
     this.iScrollAt = 20; // start scrolling up at this many lines
@@ -41,7 +41,7 @@ class Intro extends Component {
         "Hey, this is<br/>" +
         "<p>Simon Chow</p><br/>" +
         "and I'm a<br/>" +
-        "<p>Developer</p>";
+        "<p> Software Developer</p>";
     }
   }
 

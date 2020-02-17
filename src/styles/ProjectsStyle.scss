@@ -6,24 +6,8 @@
     margin: 0;
 }
 
-.title-container{
-    position: relative;
-    height: 30%;
-    width: 100%;
-    top:10%;
-}
-
 .project-title{
     font-size: 8vh;
-    position: relative;
-    top:15%;
-    left:10%;
-    width: 90%;
-    text-align: start;
-    color:$my-black;
-}
-.project-subtitle{
-    font-size: 16px;
     position: relative;
     top:15%;
     left:10%;
@@ -48,15 +32,5 @@
         text-align: center;
         color:$my-black;
     }
-    .project-subtitle{
-        font-size: 16px;
-        position: relative;
-        top:15%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        color:$my-black;
-    }
-   
 
 }

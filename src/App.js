@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
+import Footer from "./components/Footer";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import * as dotenv from "dotenv";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -28,17 +29,18 @@ class App extends Component {
           <div className="nav-bar">
             <MyNavbar />
           </div>
-          <div className="content">
-            <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route path="/home" component={HomePage} />
-              <Route path="/aboutme" component={AboutMe} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/contact" component={Contact} />
-              <Route component={PageNotFound} />
-            </Switch>
-          </div>
+
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/home" component={HomePage} />
+            <Route path="/aboutme" component={AboutMe} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+            <Route component={PageNotFound} />
+          </Switch>
         </Router>
+
+        <Footer />
       </div>
     );
   }

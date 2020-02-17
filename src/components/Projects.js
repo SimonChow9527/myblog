@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ProjectsStyle.scss";
 import "../styles/HomePageStyle.scss";
-import ProjectItem from "../components/homePagePieces/ProjectItem";
+import ProjectItem from "./ProjectItem";
 import webjet from "../resources/pic/webjet.png";
 import blog from "../resources/pic/background.jpg";
 import coffee from "../resources/pic/coffee.jpg";
@@ -11,12 +11,8 @@ import tweets from "../resources/pic/tweets.jpg";
 const Projects = () => {
   return (
     <div className="project-container">
-      <div className="title-container">
-        <div className="project-title">Projects</div>
-        <div className="project-subtitle">
-          many more to come soon & <br /> contact me for more details
-        </div>
-      </div>
+      <div className="project-title">Projects</div>
+
       <ol className="homepage-project-content-ol project-adjustment">
         <li className="homepage-project-content-li">
           <ProjectItem
