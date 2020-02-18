@@ -41,7 +41,7 @@ const ProjectItem = props => {
       </div>
       <div className="project-content-desc">
         <h4>{props.title}</h4>
-        <h5>{props.role}</h5>
+        <h5>Role: {props.role}</h5>
         <br />
         <h6>
           Keyword:{" "}

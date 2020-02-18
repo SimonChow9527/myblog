@@ -80,9 +80,11 @@
     position: relative;
 }
 .project-content-desc span{
+    display: inline-block;
     margin-left: 5px;
+    margin-top: 5px;
 
-    background-color: $light-blue-gray;
+    background-color: $light-blue;
 }
 .project-content-desc h5{
     text-decoration: underline;
