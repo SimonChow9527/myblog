@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../styles/HomePageStyle.scss";
+import "../styles/HomePageStyle.scss";
 
 class Intro extends Component {
   _isMounted = false;

@@ -55,5 +55,16 @@
         text-align: center;
         color:$my-black;
     }
+    .contact-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        top:0;
+        margin-left: -39px;
+        left:50%;
+        height:60%;
+        width: 100px;
+        position: relative;
+    }
 
 }
