@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../styles/HomePageStyle.scss";
-import Intro from "./homePagePieces/Intro";
+import Intro from "./Intro";
 
 class HomePage extends Component {
   render() {
