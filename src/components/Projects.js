@@ -20,7 +20,7 @@ const Projects = () => {
             photo={pantry}
             title="PantryGuru"
             role="Full-Stack developer"
-            demoLink="https://master.ds0ichmwy7nuy.amplifyapp.com/"
+            demoLink="https://master.d1gd74nqovwd7u.amplifyapp.com/"
             codeLink="https://github.com/SimonChow9527/SC-Housekeeper"
             keyword={[
               "React,",
