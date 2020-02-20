@@ -88,7 +88,30 @@ const AboutMe = () => {
           <br />
           <br />
           <br />
+          <br />
         </h3>
+        <div className="resume-div">
+          <h1 className="aboutme-title">Resume</h1>
+          <br />
+          <br />
+          <br />
+          <a
+            className="download-link"
+            href="./Simon_Chow_Resume_online_version.pdf"
+            download
+          >
+            Click to download a copy of my resume
+          </a>
+          <br />
+          <br />
+          <br />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );
