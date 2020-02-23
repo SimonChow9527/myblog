@@ -73,6 +73,20 @@ const Projects = () => {
         </li>
         <li className="project-content-li">
           <ProjectItem
+            photo={ASR}
+            title="ASR Teaching Assistant System"
+            role="Full-Stack developer"
+            keyword={["ASP.NET core MVC", "RESTful API"]}
+            codeLink="https://github.com/SimonChow9527/ASR-Teaching-Assistant-System"
+            desc="In this project, I was going to build a role-based consultation booking system.
+             The tech stack for the project is .NET core MVC for most front-end pages, an admin dashboard in Angular, 
+             .NET core RESTful API, ADO.NET(Entity Framework) for database connection and SQL database for storage. 
+             This project gives me confidence as a developer because I managed to pick up new tech stacks within a 
+             limited time and deliver the project in time to meet deadlines."
+          />
+        </li>
+        <li className="project-content-li">
+          <ProjectItem
             photo={coffee}
             title="CoffeeBuzz"
             role="Full-Stack developer"
@@ -88,20 +102,6 @@ const Projects = () => {
             project was simple: ReactJS for front-end, .NET core for back-end API, 
             and Azure SQL database for storage. It's a good practice of full-stack development for me, 
             and I also gained valuable experience in team collaboration and progress tracking."
-          />
-        </li>
-        <li className="project-content-li">
-          <ProjectItem
-            photo={ASR}
-            title="ASR Teaching Assistant System"
-            role="Full-Stack developer"
-            keyword={[".NET core MVC", "RESTful API"]}
-            codeLink="https://github.com/SimonChow9527/ASR-Teaching-Assistant-System"
-            desc="In this project, I was going to build a role-based consultation booking system.
-             The tech stack for the project is .NET core MVC for most front-end pages, an admin dashboard in Angular, 
-             .NET core RESTful API, ADO.NET(Entity Framework) for database connection and SQL database for storage. 
-             This project gives me confidence as a developer because I managed to pick up new tech stacks within a 
-             limited time and deliver the project in time to meet deadlines."
           />
         </li>
 

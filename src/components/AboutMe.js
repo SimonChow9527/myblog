@@ -49,11 +49,11 @@ const AboutMe = () => {
               Programming Languages
             </h3>
             <ul className="skill-ul">
+              <li>C#</li>
+              <li>Java</li>
               <li>JavaScript TypeScript</li>
               <li>HTML5, CSS preprocessor (Sass)</li>
-              <li>SQL (mySQL)</li>
-              <li>Java</li>
-              <li>C#</li>
+              <li>SQL</li>
             </ul>
           </li>
           <li>
