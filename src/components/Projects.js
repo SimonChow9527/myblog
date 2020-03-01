@@ -54,7 +54,6 @@ const Projects = () => {
             photo={webjet}
             title="Webjet - Anywhere search"
             role="Front-End developer Intern"
-            demoLink="https://tringo.azurewebsites.net/"
             keyword={[
               "React",
               "TypeScript",
@@ -75,6 +74,7 @@ const Projects = () => {
           <ProjectItem
             photo={ASR}
             title="ASR Teaching Assistant System"
+            demoLink="http://13.211.43.202:80/"
             role="Full-Stack developer"
             keyword={["ASP.NET core MVC", "RESTful API"]}
             codeLink="https://github.com/SimonChow9527/ASR-Teaching-Assistant-System"
