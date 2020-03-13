@@ -74,14 +74,14 @@ const Projects = () => {
           <ProjectItem
             photo={ASR}
             title="ASR Teaching Assistant System"
-            demoLink="http://13.211.43.202:80/"
+            demoLink="https://asr201920200313120109.azurewebsites.net/"
             role="Full-Stack developer"
             keyword={[
               "ASP.NET core MVC",
               "RESTful web API",
               "AWS EC2",
               "AWS RDS",
-              "IIS web server"
+              "Azure"
             ]}
             codeLink="https://github.com/SimonChow9527/ASR-Teaching-Assistant-System"
             desc="In this project, I was going to build a role-based consultation booking system.
