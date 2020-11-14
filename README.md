@@ -1,6 +1,6 @@
 # Personal Blog
 
-This is a personal blog, visit [here](https://simonchow.dev) for more info.
+This is a personal blog, visit [here](https://simonchow.dev) to have a look!
 
 # Tech stack
  * ReactJS
@@ -8,5 +8,5 @@ This is a personal blog, visit [here](https://simonchow.dev) for more info.
  * HTML5
  * SCSS
  * React-Redux
- * AWS deployment
+ * AWS deployment( Amplify)
 
