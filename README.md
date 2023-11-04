@@ -1,6 +1,6 @@
 # Personal Blog
 
-This is a personal blog, visit [here](https://simonchow.dev) to have a look!
+This is a personal blog, visit [here](https://xinmingzhou.com) to have a look!
 
 # Tech stack
  * ReactJS
